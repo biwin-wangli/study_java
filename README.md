@@ -1,7 +1,7 @@
 # Java Base Knowledge Review
 
 #### 介绍
-巩固Java相关的基础知识或扩展知识
+巩固Java相关的基础知识或扩展知识，本项目建议使用Chrome浏览器，并下载安装GitCodeTree插件，以方便定位markdown和代码示例查看。
 
 #### 目录
 1. [编程范式（Programming Paradigm）](/src/main/java/com/biwin/basics/knowledge/1.Programming%20Paradigm.md)
