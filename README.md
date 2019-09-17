@@ -3,28 +3,16 @@
 #### 介绍
 巩固Java相关的基础知识或扩展知识
 
-#### 软件架构
-软件架构说明
+#### 目录
+1. [编程范式（Programming Paradigm）](/src/main/java/com/biwin/basics/knowledge/1.Programming%20Paradigm.md)
+2. [面向对象编程（OOP）](/src/main/java/com/biwin/basics/knowledge/2.OOP.md)
+3. [UML](/src/main/java/com/biwin/basics/knowledge/3.UML.md)
+4. [Java设计模式与原则（Java Design Pattern&Principle）](/src/main/java/com/biwin/designpattern/4.Java%20Design%20Pattern&Principle.md)
+5. [创建型模式（Creattional Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/5.Creattional%20Pattern.md)
+……
+6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
+……
 
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
 
 
 #### 码云特技
