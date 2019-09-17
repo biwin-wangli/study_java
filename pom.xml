@@ -8,16 +8,10 @@
   <name>study-java</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
+    <!--<dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
       <version>2.4.13</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+    </dependency>-->
   </dependencies>
 </project>
