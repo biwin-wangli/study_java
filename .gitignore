@@ -21,3 +21,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/study_java.iml
+/.idea/
+/target/
