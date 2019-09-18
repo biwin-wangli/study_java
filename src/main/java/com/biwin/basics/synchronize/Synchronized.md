@@ -1,11 +1,11 @@
 ## Synchronized(同步)
-首先，解释一下synchronized作用
+首先，解释一下synchronized作用:
 
 Synchronized挂件自的作用一词概括就是：线程同步。它可以用来吸怪对象中的方法，将对象加锁。相当于不管哪一个线程A每次运行到这个方法
 时，都要检查有没有其他正在用这个方法的线程B（或者C D等），有的话要等正在使用这个方法的线程B（或者C D）运行完这个方法后再运行此线
 程A，没有的话，直接运行。
 
-然后，讲讲Synchronized语法
+然后，讲讲Synchronized语法:
 
 Synchronized关键词包括两种用法：`synchronized方法`和`synchronized块`。
 
