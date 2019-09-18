@@ -44,5 +44,29 @@ synchronized方法和synchronized同步代码块的区别：
 - synchronized方法是粗粒度的并发控制，某一个时刻只能有一个线程执行该synchronized方法。
 - synchronized同步代码块是细粒度的并发控制，只会将块中的代码同步，代码块之外的代码可以被其他线程同时访问。
 
-[Synchronized底层原理](https://www.cnblogs.com/mingyao123/p/7424911.html)
+下面来说一下synchronized(this)和synchronized(obj)的区别：
+synchronized(this)中this指调用该方法的引用对象，obj则可以为任意 引用对象；
+Java语法规定，任何线程执行同步方法、同步代码块 之前，必须先获取对应的监视器。JAVA的synchronized()方法类似于操作系统概念中的互斥
+内存块，在JAVA中的Object类型中，都是带有一个内存锁的，在有线程获取该内存锁后，其它线程无法访问该内存，从而实现JAVA中简单的同步、
+互斥操作。明白这个原理，就能理解为什么synchronized(this)与synchronized(static XXX)的区别了，synchronized就是针对内存区块申请
+内存锁，<strong>this关键字代表类的一个对象，所以其内存锁是针对相同对象的互斥操作，而static成员属于类专有，其内存空间为该类所有成员共有，
+这就导致synchronized()对static成员加锁，相当于对类加锁，也就是在该类的所有成员间实现互斥，在同一时间只有一个线程可访问该类的实
+例。</strong>如果只是简单的想要实现在JAVA中的线程互斥，明白这些基本就已经够了。但如果需要在线程间相互唤醒的话就需要借助Object.wait(), 
+Object.nofity()了。
+
+synchronized(class)很特别，它会让另一个线程在任何需要获取class做为monitor的地方等待．class与this做为不同的监视器可以同时使用，不存在一个线程获取了class，另一个线程就不能获取该class的一切实例．
+
+根据下面的代码自行修改,分别验证下面的几种情况：
+
+synchronized(class)
+synchronized(this)
+－＞线程各自获取monitor，不会有等待．
+synchronized(this)
+synchronized(this)
+－＞如果不同线程监视同一个实例对象，就会等待，如果不同的实例，不会等待．
+synchronized(class)
+synchronized(class)
+－＞如果不同线程监视同一个实例或者不同的实例对象，都会等待．
+
+扩展：[Synchronized底层原理](https://www.cnblogs.com/mingyao123/p/7424911.html)
 
