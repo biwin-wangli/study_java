@@ -7,15 +7,15 @@ package com.biwin.designpattern.creattionalpattern.singleton;
  */
 public class BaseSingleton {
 
-    private static BaseSingleton baseSingleton;
+    private static BaseSingleton singleton;
 
     private BaseSingleton(){}
 
     public static BaseSingleton getInstance(){
-        if(null == baseSingleton) {
-            baseSingleton = new BaseSingleton();
+        if(null == singleton) {
+            singleton = new BaseSingleton();
         }
-        return baseSingleton;
+        return singleton;
     }
 
     public void doSomething(){
