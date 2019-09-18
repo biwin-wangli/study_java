@@ -10,7 +10,7 @@
 4. [Java设计模式与原则（Java Design Pattern&Principle）](/src/main/java/com/biwin/designpattern/4.Java%20Design%20Pattern&Principle.md)
 5. [创建型模式（Creattional Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/5.Creattional%20Pattern.md)
 
-    5.1 [单例模式（Singleton Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/singleton/5.1.Singleton.md)
+    5.1 [单例模式（Singleton Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/singleton/5.1.Singleton.md)
     
 6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
 6.x …… 
