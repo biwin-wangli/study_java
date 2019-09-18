@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 /**
- * @Description
+ * @Description 可变参数应用
  * @auther wangli
  * @create 2019-08-21 17:36
  */
@@ -22,8 +22,5 @@ public class Varargs {
 
     public static void main(String[] args) {
         methodA("","", "1", "2", "3");
-
-        Date date = new Date(System.currentTimeMillis());
-        System.out.println(date);
     }
 }
