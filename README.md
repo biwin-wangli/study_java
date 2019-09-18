@@ -1,7 +1,7 @@
 # Java Base Knowledge Review
 
 #### 介绍
-巩固Java相关的基础知识或扩展知识，本项目建议使用Chrome浏览器，并下载安装GitCodeTree插件，以方便定位markdown和代码示例查看。
+巩固Java相关的基础知识或扩展知识，本项目建议使用Chrome浏览器，并下载安装GitCodeTree插件，以方便定位markdown和查看代码示例。
 
 #### 目录
 1. [编程范式（Programming Paradigm）](/src/main/java/com/biwin/basics/knowledge/1.Programming%20Paradigm.md)
@@ -9,7 +9,7 @@
 3. [UML](/src/main/java/com/biwin/basics/knowledge/3.UML.md)
 4. [Java设计模式与原则（Java Design Pattern&Principle）](/src/main/java/com/biwin/designpattern/4.Java%20Design%20Pattern&Principle.md)
 5. [创建型模式（Creattional Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/5.Creattional%20Pattern.md)
-5.1 ……
+5.1 [单例模式（Singleton Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/singleton/5.1.Singleton.md)
 6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
 6.x …… 
 
