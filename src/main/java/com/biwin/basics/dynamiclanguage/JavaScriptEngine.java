@@ -3,6 +3,7 @@ package com.biwin.basics.dynamiclanguage;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
+import java.math.BigDecimal;
 
 /**
  * @Description 执行JavaScript脚本语言，但是在执行双精度的加减乘除会出现精度丢失问题
@@ -30,6 +31,9 @@ public class JavaScriptEngine {
         //双精度 的算术运算会存在精度丢失问题
         System.out.println(calculateShell("3-2.99"));
         System.out.println(calculateShell("30-5.99"));
+
+        boolean conditionResult = (boolean) engine.eval("6.80 >=2");
+        System.out.println(conditionResult);
     }
 
 }
