@@ -58,15 +58,15 @@ synchronized(class)很特别，它会让另一个线程在任何需要获取clas
 
 根据下面的代码自行修改,分别验证下面的几种情况：
 
-synchronized(class)
-synchronized(this)
-－＞线程各自获取monitor，不会有等待．
-synchronized(this)
-synchronized(this)
-－＞如果不同线程监视同一个实例对象，就会等待，如果不同的实例，不会等待．
-synchronized(class)
-synchronized(class)
-－＞如果不同线程监视同一个实例或者不同的实例对象，都会等待．
+    synchronized(class)
+    synchronized(this)
+    －＞线程各自获取monitor，不会有等待．
+    synchronized(this)
+    synchronized(this)
+    －＞如果不同线程监视同一个实例对象，就会等待，如果不同的实例，不会等待．
+    synchronized(class)
+    synchronized(class)
+    －＞如果不同线程监视同一个实例或者不同的实例对象，都会等待．
 
 扩展：[Synchronized底层原理](https://www.cnblogs.com/mingyao123/p/7424911.html)
 
