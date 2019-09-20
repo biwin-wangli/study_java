@@ -7,7 +7,7 @@ package com.biwin.designpattern.creattionalpattern.factory.staticfactory.upgrade
  */
 public class Bike extends Vehicle {
     @Override
-    void driven() {
+    public void driven() {
         System.out.println("Bike is run");
     }
 
