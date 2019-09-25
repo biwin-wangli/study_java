@@ -1,7 +1,7 @@
 package com.biwin.designpattern.creattionalpattern.builder.simplebuilder;
 
 /**
- * @Description
+ * @Description 电动车建造监工
  * @auther wangli
  * @create 2019-09-25 15:44
  */

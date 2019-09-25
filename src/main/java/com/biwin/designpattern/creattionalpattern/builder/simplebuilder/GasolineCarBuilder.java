@@ -1,7 +1,7 @@
 package com.biwin.designpattern.creattionalpattern.builder.simplebuilder;
 
 /**
- * @Description
+ * @Description 汽油车建造监工
  * @auther wangli
  * @create 2019-09-25 16:22
  */

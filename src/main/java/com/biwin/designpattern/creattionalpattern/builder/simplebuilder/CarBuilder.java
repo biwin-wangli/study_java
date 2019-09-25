@@ -2,7 +2,7 @@ package com.biwin.designpattern.creattionalpattern.builder.simplebuilder;
 
 
 /**
- * @Description
+ * @Description 抽象的建造器
  * @auther wangli
  * @create 2019-09-25 15:42
  */

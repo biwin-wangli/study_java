@@ -1,7 +1,7 @@
 package com.biwin.designpattern.creattionalpattern.builder.simplebuilder;
 
 /**
- * @Description
+ * @Description 统一对外的建造总负责器
  * @auther wangli
  * @create 2019-09-25 15:39
  */

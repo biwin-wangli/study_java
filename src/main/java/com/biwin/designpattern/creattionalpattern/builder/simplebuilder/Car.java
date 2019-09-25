@@ -1,7 +1,7 @@
 package com.biwin.designpattern.creattionalpattern.builder.simplebuilder;
 
 /**
- * @Description
+ * @Description 通过建造者构建的对象
  * @auther wangli
  * @create 2019-09-25 15:45
  */
