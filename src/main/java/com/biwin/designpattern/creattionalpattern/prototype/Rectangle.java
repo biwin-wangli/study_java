@@ -1,7 +1,7 @@
 package com.biwin.designpattern.creattionalpattern.prototype;
 
 /**
- * @Description
+ * @Description  长方形
  * @auther wangli
  * @create 2019-09-25 19:54
  */
