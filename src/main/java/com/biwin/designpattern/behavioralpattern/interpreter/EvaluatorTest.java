@@ -7,7 +7,7 @@ import java.util.Stack;
  * @auther wangli
  * @create 2019-09-16 14:23
  */
-public class Evaluator {
+public class EvaluatorTest {
 
     public float evaluate(String expression){
         Stack<Expression> stack = new Stack<>();
@@ -50,7 +50,7 @@ public class Evaluator {
     }
 
     public static void main(String[] args) {
-        Evaluator eval = new Evaluator();
+        EvaluatorTest eval = new EvaluatorTest();
         System.out.println(eval.evaluate("2 3 +"));
         System.out.println(eval.evaluate("4 3 -"));
         System.out.println(eval.evaluate("4 3 - 2 +"));

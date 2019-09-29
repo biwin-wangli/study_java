@@ -1,14 +1,14 @@
 package com.biwin.designpattern.behavioralpattern.iterator;
 
 /**
- * @Description
+ * @Description  迭代器
  * @auther wangli
  * @create 2019-09-17 10:09
  */
 public interface Iterator {
 
-    public Object next();
+    Object next();
 
-    public boolean hasNext();
+    boolean hasNext();
 
 }
