@@ -11,6 +11,10 @@
 5. [创建型模式（Creattional Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/5.Creattional%20Pattern.md)
 
     5.1 [单例模式（Singleton Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/singleton/5.1.Singleton.md)
+    5.2 [工厂模式（Factory Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/factory/5.2.Factory.md)
+    5.3 [建造者模式（Builder Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/builder/5.3.Builder.md)
+    5.4 [原型模式（Prototype Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/prototype/5.4.Prototype.md)
+    5.5 [对象池模式（Object Pool Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/objectpool/5.5.ObjectPool.md)
     
 6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
 6.x …… 
