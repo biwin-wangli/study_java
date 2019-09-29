@@ -21,7 +21,8 @@
     5.5 [对象池模式（Object Pool Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/objectpool/5.5.ObjectPool.md)
     
 6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
-6.x …… 
+
+    6.x …… 
 
 
 
