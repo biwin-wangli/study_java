@@ -4,67 +4,81 @@
 [学习地址](https://www.jianshu.com/p/577906fa2cc2)
 ```
     @Override
-	public void refresh() throws BeansException, IllegalStateException {
-		synchronized (this.startupShutdownMonitor) {
-			// Prepare this context for refreshing.准备刷新的上下文环境，例如对系统属性或者环境变量进行准备及验证。
-			prepareRefresh();
+    public void refresh() throws BeansException, IllegalStateException {
+        synchronized (this.startupShutdownMonitor) {
+            // Prepare this context for refreshing.
+            // 准备，记录容器的启动时间startupDate, 标记容器为激活，初始化上下文环境如文件路径信息，验证必填属性是否填写
+            prepareRefresh();
 
-			// Tell the subclass to refresh the internal bean factory.启动子类的refreshBeanFactory方法.解析xml
-			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
+            // Tell the subclass to refresh the internal bean factory.
+            // 这步比较重要(解析)，告诉子类去刷新bean工厂，这步完成后配置文件就解析成一个个bean定义，注册到BeanFactory（但是未被初始化，仅将信息写到了beanDefination的map中）
+            ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
-			// Prepare the bean factory for use in this context.为BeanFactory配置容器特性，例如类加载器、事件处理器等.
-			prepareBeanFactory(beanFactory);
+            // Prepare the bean factory for use in this context.为BeanFactory
+            // 设置beanFactory类加载器，添加多个beanPostProcesser
+            prepareBeanFactory(beanFactory);
 
-			try {
-				// Allows post-processing of the bean factory in context subclasses.设置BeanFactory的后置处理. 空方法，留给子类拓展用。
-				postProcessBeanFactory(beanFactory);
+            try {
+                // Allows post-processing of the bean factory in context subclasses.
+                // 允许子类上下文中对beanFactory做后期处理
+                postProcessBeanFactory(beanFactory);
 
-				// Invoke factory processors registered as beans in the context.调用BeanFactory的后处理器, 这些后处理器是在Bean定义中向容器注册的.
-				invokeBeanFactoryPostProcessors(beanFactory);
+                // Invoke factory processors registered as beans in the context.
+                // 调用BeanFactoryPostProcessor各个实现类的方法
+                invokeBeanFactoryPostProcessors(beanFactory);
 
-				// Register bean processors that intercept bean creation.注册Bean的后处理器, 在Bean创建过程中调用.  
-				registerBeanPostProcessors(beanFactory);
+                // Register bean processors that intercept bean creation.
+                // 注册 BeanPostProcessor 的实现类，注意看和 BeanFactoryPostProcessor 的区别
+                // 此接口两个方法: postProcessBeforeInitialization 和 postProcessAfterInitialization
+                // 两个方法分别在 Bean 初始化之前和初始化之后得到执行。注意，到这里 Bean 还没初始化
+                registerBeanPostProcessors(beanFactory);
 
-				// Initialize message source for this context.初始化上下文中的消息源，即不同语言的消息体进行国际化处理
-				initMessageSource();
+                // Initialize message source for this context.
+                // 初始化ApplicationContext的MessageSource
+                initMessageSource();
 
-				// Initialize event multicaster for this context.初始化ApplicationEventMulticaster bean,应用事件广播器
-				initApplicationEventMulticaster();
+                // Initialize event multicaster for this context.
+                // 初始化ApplicationContext事件广播器
+                initApplicationEventMulticaster();
 
-				// Initialize other special beans in specific context subclasses.初始化其它特殊的Bean， 空方法，留给子类拓展用。
-				onRefresh();
+                // Initialize other special beans in specific context subclasses.
+                // 初始化子类特殊bean（钩子方法）
+                onRefresh();
 
-				// Check for listener beans and register them.检查并向容器注册监听器Bean
-				registerListeners();
+                // Check for listener beans and register them.
+                // 注册事件监听器
+                registerListeners();
 
-				// Instantiate all remaining (non-lazy-init) singletons.实例化所有剩余的(non-lazy-init) 单例Bean.
-				finishBeanFactoryInitialization(beanFactory);
+                // Instantiate all remaining (non-lazy-init) singletons.
+                // 初始化所有singleton bean  重点！！重点！！
+                finishBeanFactoryInitialization(beanFactory);
 
-				// Last step: publish corresponding event.发布容器事件, 结束refresh过程.
-				finishRefresh();
-			}
+                // Last step: publish corresponding event.
+                // 广播事件，ApplicationContext初始化完成
+                finishRefresh();
+            }
 
-			catch (BeansException ex) {
-				if (logger.isWarnEnabled()) {
-					logger.warn("Exception encountered during context initialization - " +
-							"cancelling refresh attempt: " + ex);
-				}
+            catch (BeansException ex) {
+                if (logger.isWarnEnabled()) {
+                    logger.warn("Exception encountered during context initialization - " +
+                            "cancelling refresh attempt: " + ex);
+                }
 
-				// Destroy already created singletons to avoid dangling resources.销毁已经创建的单例Bean, 以避免资源占用.
-				destroyBeans();
+                // Destroy already created singletons to avoid dangling resources.销毁已经创建的单例Bean, 以避免资源占用.
+                destroyBeans();
 
-				// Reset 'active' flag.取消refresh操作, 重置active标志. 
-				cancelRefresh(ex);
+                // Reset 'active' flag.取消refresh操作, 重置active标志.
+                cancelRefresh(ex);
 
-				// Propagate exception to caller.
-				throw ex;
-			}
+                // Propagate exception to caller.
+                throw ex;
+            }
 
-			finally {
-				// Reset common introspection caches in Spring's core, since we
-				// might not ever need metadata for singleton beans anymore...重置Spring的核心缓存
-				resetCommonCaches();
-			}
-		}
-	}
+            finally {
+                // Reset common introspection caches in Spring's core, since we
+                // might not ever need metadata for singleton beans anymore...重置Spring的核心缓存
+                resetCommonCaches();
+            }
+        }
+    }
 ```
