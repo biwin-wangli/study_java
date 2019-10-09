@@ -5,9 +5,13 @@
 
 #### 目录
 1. [编程范式（Programming Paradigm）](/src/main/java/com/biwin/basics/knowledge/1.Programming%20Paradigm.md)
+
 2. [面向对象编程（OOP）](/src/main/java/com/biwin/basics/knowledge/2.OOP.md)
+
 3. [UML](/src/main/java/com/biwin/basics/knowledge/3.UML.md)
+
 4. [Java设计模式与原则（Java Design Pattern&Principle）](/src/main/java/com/biwin/designpattern/4.Java%20Design%20Pattern&Principle.md)
+
 5. [创建型模式（Creattional Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/5.Creattional%20Pattern.md)
 
     5.1 [单例模式（Singleton Pattern）](/src/main/java/com/biwin/designpattern/creattionalpattern/singleton/5.1.Singleton.md)
@@ -46,6 +50,7 @@
      
      6.12 [访问者模式（Visitor）](/src/main/java/com/biwin/designpattern/behavioralpattern/visitor/6.12.Visitor.md) 
 
+7. [结构型模式（Structural Pattern）](/src/main/java/com/biwin/designpattern/structuralpattern/7.Structural%20Pattern.md)
 
 #### 码云特技
 
