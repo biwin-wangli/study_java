@@ -1,4 +1,4 @@
-package com.biwin.designpattern.structuralpattern.proxy;
+package com.biwin.designpattern.structuralpattern.proxy.staticproxy;
 
 /**
  * @Description 这是对象，是我们想要实现的接口，它模拟了@RemoteInterface和@LocalInterface接口的建模

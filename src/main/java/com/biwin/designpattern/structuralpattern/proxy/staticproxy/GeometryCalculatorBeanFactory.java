@@ -1,4 +1,4 @@
-package com.biwin.designpattern.structuralpattern.proxy;
+package com.biwin.designpattern.structuralpattern.proxy.staticproxy;
 
 /**
  * @Description

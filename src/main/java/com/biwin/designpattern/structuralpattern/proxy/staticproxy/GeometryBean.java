@@ -1,4 +1,4 @@
-package com.biwin.designpattern.structuralpattern.proxy;
+package com.biwin.designpattern.structuralpattern.proxy.staticproxy;
 
 /**
  * @Description 真实对象，它知道如何执行实际的几何计算

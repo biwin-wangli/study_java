@@ -1,4 +1,4 @@
-package com.biwin.designpattern.structuralpattern.proxy;
+package com.biwin.designpattern.structuralpattern.proxy.staticproxy;
 
 /**
  * @Description 代理对象。值得注意的是代理对象没有业务逻辑，它在建立起一个句柄后，会将业务请求委托给真实对象来处理。
