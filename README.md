@@ -22,8 +22,29 @@
     
 6. [行为型模式（Behavioral Pattern）](/src/main/java/com/biwin/designpattern/behavioralpattern/6.Behavioral%20Pattern.md)
 
-    6.x …… 
-
+     6.1 [责任链模式（Chain of Responsibility）](/src/main/java/com/biwin/designpattern/behavioralpattern/chainofresponsibility/6.1.ChainOfResponsibility.md) 
+     
+     6.2 [命令模式（Command）](/src/main/java/com/biwin/designpattern/behavioralpattern/command/6.2.Command.md) 
+     
+     6.3 [解释器模式（Interpreter）](/src/main/java/com/biwin/designpattern/behavioralpattern/interpreter/6.3.Interpreter.md) 
+     
+     6.4 [迭代器模式（Iterator）](/src/main/java/com/biwin/designpattern/behavioralpattern/iterator/6.4.Iterator.md) 
+     
+     6.5 [观察者模式（Observer）](/src/main/java/com/biwin/designpattern/behavioralpattern/observer/6.5.Observer.md) 
+     
+     6.6 [中介者模式（Mediator）](/src/main/java/com/biwin/designpattern/behavioralpattern/mediator/6.6.Mediator.md) 
+     
+     6.7 [备忘录模式（Memento）](/src/main/java/com/biwin/designpattern/behavioralpattern/memento/6.7.Memento.md) 
+     
+     6.8 [状态模式（State）](/src/main/java/com/biwin/designpattern/behavioralpattern/state/6.8.State.md) 
+     
+     6.9 [策略模式（Strategy）](/src/main/java/com/biwin/designpattern/behavioralpattern/strategy/6.9.Strategy.md) 
+     
+     6.10 [模板方法（Template）](/src/main/java/com/biwin/designpattern/behavioralpattern/template/6.10.Template.md) 
+     
+     6.11 [空对象（Null Object）](/src/main/java/com/biwin/designpattern/behavioralpattern/nullobject/6.11.NullObject.md) 
+     
+     6.12 [访问者模式（Visitor）](/src/main/java/com/biwin/designpattern/behavioralpattern/visitor/6.12.Visitor.md) 
 
 
 #### 码云特技
